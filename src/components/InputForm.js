@@ -140,13 +140,13 @@ const InputForm = () => {
               >
                 <option value="">Select Barn Type</option>
                 <option value="Old">Old</option>
-                <option value="New">New Setam</option>
+                <option value="New">New</option>
                 <option value="Setam">Setam</option>
                 <option value="Others">Others</option>
               </select>
             </div>
             <div>
-              <label>Number of Karra (Ok)</label>
+              <label>Number of Karra</label>
               <input
                 type="number"
                 name="numberOfKarra"
