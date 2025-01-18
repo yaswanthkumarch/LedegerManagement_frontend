@@ -1,0 +1,177 @@
+/* Summary Container */
+.summary-container {
+  padding: 30px;
+  margin: 30px auto;
+  background-color: #fff;
+  border-radius: 10px;
+  max-width: 1200px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+/* Heading */
+h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Filter Buttons */
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.filter-buttons button {
+  padding: 12px 25px;
+  font-size: 16px;
+  border: none;
+  background-color: #007BFF;
+  color: white;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.3s;
+  font-weight: 500;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.filter-buttons button:hover {
+  background-color: #0056b3;
+  transform: translateY(-3px);
+}
+
+.filter-buttons button:active {
+  transform: translateY(2px);
+}
+
+.filter-buttons button:focus {
+  outline: none;
+}
+
+/* Transaction Table */
+.transaction-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.transaction-table th,
+.transaction-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+  font-size: 16px;
+}
+
+/* Table Header */
+.transaction-table th {
+  background-color: #28a745;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Row Hover Effect */
+.transaction-table tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+.transaction-table tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.transaction-table tr:hover {
+  background-color: #e2e6ea;
+}
+
+/* Transaction Table Cells */
+.transaction-table td {
+  word-wrap: break-word;
+}
+
+.transaction-table td:first-child {
+  width: 60px; /* For serial number column */
+}
+
+.transaction-table td:nth-child(2) {
+  width: 120px; /* Date column */
+}
+
+.transaction-table td:nth-child(3) {
+  max-width: 300px; /* Description column */
+}
+
+/* Total Summary Section */
+.total-summary {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.total-summary p {
+  margin: 10px 0;
+}
+
+.total-summary p:last-child {
+  font-size: 20px;
+  font-weight: bold;
+  color: #28a745;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .transaction-table th,
+  .transaction-table td {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .filter-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .filter-buttons button {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+  }
+
+  .transaction-table td:nth-child(2),
+  .transaction-table td:nth-child(3) {
+    width: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .summary-container {
+    padding: 20px;
+    margin: 20px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .filter-buttons button {
+    font-size: 14px;
+  }
+
+  .transaction-table th,
+  .transaction-table td {
+    padding: 8px;
+    font-size: 13px;
+  }
+}
