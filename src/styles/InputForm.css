@@ -1,0 +1,167 @@
+/* Input Form Styles */
+.input-form-container {
+  width: 60%;
+  margin: 30px auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.input-form-container h2 {
+  text-align: center;
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.input-form-container input,
+.input-form-container select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.input-form-container input:focus,
+.input-form-container select:focus {
+  border-color: #4CAF50;
+  padding-top: 10px;
+  outline: none;
+}
+
+.input-form-container button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.input-form-container button:hover {
+  background-color: #45a049;
+}
+
+/* Animation for smooth transitions */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Summary Section Styles */
+.summary-container {
+  width: 80%;
+  margin: 30px auto;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.summary-container h2 {
+  text-align: center;
+  color: #4CAF50;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.transaction-group {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #ddd;
+}
+
+.transaction-item {
+  padding: 12px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.transaction-item p {
+  font-size: 16px;
+  color: #333;
+  margin: 5px 0;
+}
+
+.transaction-item .date {
+  font-size: 14px;
+  color: #888;
+}
+
+.transaction-item .amount {
+  font-size: 16px;
+  font-weight: bold;
+  color: #4CAF50;
+}
+
+.transaction-item .quantity,
+.transaction-item .price,
+.transaction-item .karalu,
+.transaction-item .typeOfTobaccoKotulu {
+  font-size: 14px;
+  color: #555;
+  margin-top: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .input-form-container {
+    width: 90%;
+  }
+
+  .summary-container {
+    width: 90%;
+  }
+}
+.input-form-container {
+  width: 60%;
+  margin: 30px auto;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.input-form-container h2 {
+  text-align: center;
+  color: #333;
+}
+
+.input-form-container input,
+.input-form-container select {
+  width: 100%;
+  padding: 8px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
